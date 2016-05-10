@@ -1,4 +1,4 @@
-# Authenticon prototype API test Web client #
+# Authenticon prototype Web client #
 
 *Authenticon* is a project proposed by [Martus](http://www.martus.org). Briefly, Martus is used by people in hostile environments to transmit evidence of human rights abuses. Their transmissions are encrypted. To detect interception, a 40-digit fingerprint is provided that can be verified out of band (eg, by phone call). Because it is difficult to check a 40-digit number over a phone the fingerprint is rarely checked. The project proposes to provide a more visual view of the fingerprint that is easier to work with.
 
