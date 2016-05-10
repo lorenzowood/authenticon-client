@@ -21,6 +21,13 @@ See the [run-through](https://youtu.be/5LxcUCHlwkI).
 
 It is a one-page site that uses [bootstrap.js](http://getbootstrap.com/) for responsive layout with virtually no customisation. Along with [jQuery](http://jquery.com) it uses [the jQuery Validation plug-in](https://jqueryvalidation.org/) to provide automatic validation of the entry field for fingerprints. Bootstrap is copied into the project; jQuery and jQuery Validation are loaded from a CDN.
 
+The URL for the API is hard-wired near the top of the file. The current section is:
+```
+  <script>
+      var apiRoot = 'http://52.48.1.222/api/visualise-fingerprint.php';
+  </script>
+```
+
 When it loads (using jQuery’s *ready()* call) it calls the API end point to retrieve an array of encoding methods. It uses these to populate the drop-down in the nav bar that allows the user to change methods.
 
 The main page either shows a form to enter a fingerprint (validated for exactly 40 digits) or shows the result of encoding. The type of the encoding method (*image* or *text*) is used to determine how to render the result of calling the API. For text, *<pre>* is used to allow line breaks to work. The only styling override in the file is to boost the size of *<pre>* text.
