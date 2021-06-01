@@ -30,7 +30,7 @@ The URL for the API is hard-wired near the top of the file. The current section 
 
 When it loads (using jQuery’s *ready()* call) it calls the API end point to retrieve an array of encoding methods. It uses these to populate the drop-down in the nav bar that allows the user to change methods.
 
-The main page either shows a form to enter a fingerprint (validated for exactly 40 digits) or shows the result of encoding. The type of the encoding method (*image* or *text*) is used to determine how to render the result of calling the API. For text, *<pre>* is used to allow line breaks to work. The only styling override in the file is to boost the size of *<pre>* text.
+The main page either shows a form to enter a fingerprint (validated for exactly 40 digits) or shows the result of encoding. The type of the encoding method (*image* or *text*) is used to determine how to render the result of calling the API. For text, <code>&lt;pre&gt;</code> is used to allow line breaks to work. The only styling override in the file is to boost the size of <code>&lt;pre&gt;</code> text.
 
 ## Considerations for further development ##
 
